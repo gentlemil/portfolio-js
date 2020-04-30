@@ -40,20 +40,64 @@
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
-  background: #f1f1f1;
+  background: #041230;
   margin-bottom: 2rem;
 }
 
-.projects .frameBox .card img {
-  height: 400px;
+.projects .frameBox .card .image {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects .frameBox .card .image img {
+  width: 80%;
+  height: 80%;
+  border: 4px solid seashell;
 }
 
 .projects .frameBox .card .content {
   padding: 2rem;
+  color: seashell;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projects .frameBox .card .content h3 {
   margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.projects .frameBox .card .content p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.projects .frameBox .card .content .buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .projects .frameBox .card:nth-child(even) img {

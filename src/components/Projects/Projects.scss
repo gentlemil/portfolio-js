@@ -43,23 +43,49 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 2rem;
-            background: #f1f1f1;
+            background: rgb(4, 18, 48);
             margin-bottom: 2rem;
 
-            img {
-                height: 400px;
+            .image {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 80%;
+                    height: 80%;
+                    border: 4px solid seashell;
+                }
             }
+
 
             .content {
                 padding: 2rem;
+                color: seashell;
+                display: flex;
+                flex-direction: column;
+                // justify-content: center;
+                align-items: center;
 
                 h3 {
                     margin-bottom: 2rem;
+
+                    font-size: 2rem;
+                    font-weight: 400;
                 }
 
-                p {}
+                p {
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                }
 
-                a {}
+                .buttons {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
             }
         }
 

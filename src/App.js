@@ -11,6 +11,7 @@ import About from './components/About/About';
 import Resume from './components/Resume/Resume';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 class App extends React.PureComponent {
   constructor(props) {
@@ -49,11 +50,9 @@ class App extends React.PureComponent {
             <Route component={Projects} path='/projects' />
             <Route component={Contact} path='/contact' />
             <Route component={Home} exact path='/' />
-
           </Switch>
-
         </Router>
-
+        <Footer />
 
       </div>
     );
