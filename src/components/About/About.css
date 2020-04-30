@@ -1,0 +1,104 @@
+.about {
+  width: 100%;
+  background-color: #041230;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  margin-top: 1.5rem;
+  padding: 0;
+}
+
+.about .frameBox {
+  max-width: 1300px;
+  background-color: seashell;
+  margin: 0 auto;
+  padding: 1rem 6rem 3rem;
+}
+
+.about .frameBox .frameBox__title h1 {
+  color: #041230;
+  font-weight: 200;
+  font-size: 3.5rem;
+  padding: 0;
+  margin-bottom: 0;
+  padding-left: 2rem;
+}
+
+.about .frameBox .frameBox__title h4 {
+  color: #041230;
+  font-weight: 100;
+  font-size: 1.5rem;
+  padding: 0;
+  padding-left: 2rem;
+  margin-top: 0;
+}
+
+.about .frameBox .frameBox__content {
+  border: 2px solid #041230;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2.5rem 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.vertical-timeline::before {
+  background-color: #041230;
+}
+
+.vertical-timeline-element-icon {
+  border: 2px solid #041230;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  /* background-color: seashell; */
+  color: #041230;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vertical-timeline-element-icon i {
+  color: seashell;
+  margin: 0 auto;
+}
+
+.vertical-timeline-element-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.vertical-timeline-element-subtitle {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.vertical-timeline-element-description {
+  font-size: 1.5rem;
+}
+
+.vertical-timeline-element-content p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+@media (max-width: 769px) {
+  .about .frameBox {
+    padding: 1rem 0;
+  }
+  .about .frameBox .frameBox__content {
+    border: none;
+  }
+}
+/*# sourceMappingURL=About.css.map */
