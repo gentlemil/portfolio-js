@@ -7,9 +7,13 @@
     border: 1px solid seashell;
 }
 
+a {
+    text-decoration: none;
+}
+
 .button-frame__text {
     text-decoration: none;
-    color: white;
+    color: seashell;
     font-size: 1.4rem;
     margin: 0;
 }

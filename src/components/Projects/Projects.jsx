@@ -26,7 +26,6 @@ class Projects extends React.PureComponent {
     render() {
         window.addEventListener('load', AOS.refresh);
         return (
-
             <div className="projects">
                 <div className='frameBox' >
                     <div className='frameBox__title'>
