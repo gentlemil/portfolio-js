@@ -1,0 +1,21 @@
+.button-frame {
+    padding: 0.6rem 1rem;
+    margin: 0.6rem 1.5rem;
+    border: 1px solid white;
+    background: transparent;
+
+    background-size: cover;
+    background-position: center center;
+}
+
+.button-frame__text {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.button-frame:hover,
+.button-frame:active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
