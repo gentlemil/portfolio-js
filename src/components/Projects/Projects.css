@@ -1,0 +1,70 @@
+.projects {
+  width: 100%;
+  background-color: #041230;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  margin-top: 1.5rem;
+  padding: 0;
+}
+
+.projects .frameBox {
+  max-width: 1300px;
+  background-color: seashell;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 3rem;
+}
+
+.projects .frameBox .frameBox__title h1 {
+  color: #041230;
+  font-weight: 200;
+  font-size: 3.5rem;
+  padding: 0;
+  margin-bottom: 0;
+  padding-left: 2rem;
+}
+
+.projects .frameBox .frameBox__title h4 {
+  color: #041230;
+  font-weight: 100;
+  font-size: 1.5rem;
+  padding: 0;
+  padding-left: 2rem;
+  margin-top: 0;
+}
+
+.projects .frameBox .card {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  background: #f1f1f1;
+  margin-bottom: 2rem;
+}
+
+.projects .frameBox .card img {
+  height: 400px;
+}
+
+.projects .frameBox .card .content {
+  padding: 2rem;
+}
+
+.projects .frameBox .card .content h3 {
+  margin-bottom: 2rem;
+}
+
+.projects .frameBox .card:nth-child(even) img {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+@media (max-width: 600px) {
+  .card {
+    display: block;
+  }
+}
+/*# sourceMappingURL=Projects.css.map */
