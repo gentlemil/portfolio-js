@@ -1,9 +1,9 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
-// import MainContent from '../MainContent/MainContent';
-// import MyAbout from '../MyAbout/MyAbout';
-// import MyResume from '../MyResume/MyResume';
+// import Home from '../Home/Home';
+// import About from '../Linkbout/Linkbout';
+// import Resume from '../Resume/Resume';
 // import MyProjects from '../MyProjects/MyProjects';
 // import MyContact from '../MyContact/MyContact';
 
@@ -16,14 +16,15 @@ const Toolbar = (props) => {
                 <div className='toolbar__toggle-button'>
                     <DrawerToggleButton click={props.drawerClickHandler} />
                 </div>
-                <div className='toolbar__logo'><a href='/'>MILOSZ BUKALA</a></div>
+                <div className='toolbar__logo'><Link to='/'>MILOSZ BUKALA</Link></div>
                 <div className='spacer'></div>
+
                 <div className='toolbar_navigation-items'>
                     <ul>
-                        <li><a href='/about'>ABOUT</a></li>
-                        <li><a href='/resume'>RESUME</a></li>
-                        <li><a href='/projects'>PROJECT</a></li>
-                        <li><a href='/contact'>CONTACT</a></li>
+                        <li><Link to='/about'>ABOUT</Link></li>
+                        <li><Link to='/resume'>RESUME</Link></li>
+                        <li><Link to='/projects'>PROJECT</Link></li>
+                        <li><Link to='/contact'>CONTACT</Link></li>
                     </ul>
                 </div>
             </nav>

@@ -1,10 +1,16 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.scss';
-
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Toolbar from './components/Toolbar/Toolbar'
 import SideDrawer from './components/SideDrawer/SideDrawer'
 import Backdrop from './components/Backdrop/Backdrop'
+
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Resume from './components/Resume/Resume';
+import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
 
 class App extends React.PureComponent {
   constructor(props) {
@@ -33,9 +39,22 @@ class App extends React.PureComponent {
 
     return (
       <div className="App">
-        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
-        <SideDrawer show={this.state.sideDrawerOpen} />
-        {backdrop}
+        <Router>
+          <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
+          <SideDrawer show={this.state.sideDrawerOpen} />
+          {backdrop}
+          <Switch>
+            <Route component={About} path='/about' />
+            <Route component={Resume} path='/resume' />
+            <Route component={Projects} path='/projects' />
+            <Route component={Contact} path='/contact' />
+            <Route component={Home} exact path='/' />
+
+          </Switch>
+
+        </Router>
+
+
       </div>
     );
   }
