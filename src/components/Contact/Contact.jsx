@@ -1,65 +1,101 @@
-import React from 'react';
-import './Contact.scss'
+import React, { Component } from 'react';
+import * as emailjs from 'emailjs-com';
+// import Button from '../Button/Button'
+import { Button, FormFeedback, Form, FormGroup, Label, Input } from 'reactstrap';
 
-class Contact extends React.PureComponent {
-    constructor(props) {
-        super(props);
-        this.state = { feedback: 'dupadupa', name: 'Milosz Bukala', email: 'mil.bukala@gmail.com' };
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+import './Contact.scss';
+
+class Contact extends Component {
+    state = {
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+    };
+
+    handleSubmit = (e) => {
+        e.preventDefault()
+        const { name, email, subject, message } = this.state
+
+        let templateParams = {
+            from_name: email,
+            to_name: 'mil.bukala@gmail.com',
+            subject: subject,
+            message_html: message,
+        }
+        emailjs.send(
+            'gmail',
+            'template_FZMNakmZ',
+            templateParams,
+            'user_mEjqdIMTdyWs95cnj4A0W'
+        )
+        this.resetForm()
     }
-    handleChange(event) {
-        this.setState({ feedback: event.target.value })
-    }
-
-    handleSubmit(event) {
-        const templateId = 'template_FZMNakmZ';
-
-        this.sendFeedback(templateId, { message_html: this.state.feedback, from_name: this.state.name, reply_to: this.state.email })
-    }
-
-    sendFeedback(templateId, variables) {
-        window.emailjs.send(
-            'gmail', templateId,
-            variables
-        ).then(res => {
-            console.log('Email successfully sent!')
+    resetForm() {
+        this.setState({
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
         })
-            // Handle errors here however you like, or use a React error boundary
-            .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
+    }
+    handleChange = (param, e) => {
+        this.setState({ [param]: e.target.value })
     }
     render() {
         return (
-            <div className="projects">
+            <div className='contact'>
                 <div className='frameBox' >
                     <div className='frameBox__title'>
-                        <h1>CONTACT ME</h1>
-                        <h4>chit-chat ?</h4>
+                        <h1>CONTACT</h1>
+                        <h4>wanna hire me, small talk, chit chat?</h4>
                     </div>
-                    {/* --- */}
-                    <form className="test-mailing">
-                        <h1>Let's see if it works</h1>
-                        <div>
-                            <textarea
-                                id="test-mailing"
-                                name="test-mailing"
-                                onChange={this.handleChange}
-                                placeholder="Post some lorem ipsum here"
-                                required
-                                value={this.state.feedback}
-                                style={{ width: '60%', height: '150px' }}
+                    <Form onSubmit={this.handleSubmit} className='form-content'>
+                        <FormGroup controlId="formBasicEmail">
+                            <Input
+                                type="email"
+                                name="email"
+                                value={this.state.email}
+                                className="text-primary"
+                                onChange={this.handleChange.bind(this, 'email')}
+                                placeholder="Enter email"
                             />
-                        </div>
-                        <input type="button" value="Submit" className="btn btn--submit" onClick={this.handleSubmit} />
-                    </form>
-                    {/* --- */}
-
+                        </FormGroup>
+                        <FormGroup controlId="formBasicName">
+                            <Input
+                                type="text"
+                                name="name"
+                                value={this.state.name}
+                                className="text-primary"
+                                onChange={this.handleChange.bind(this, 'name')}
+                                placeholder="Name"
+                            />
+                        </FormGroup>
+                        <FormGroup controlId="formBasicSubject">
+                            <Input
+                                type="text"
+                                name="subject"
+                                className="text-primary"
+                                value={this.state.subject}
+                                onChange={this.handleChange.bind(this, 'subject')}
+                                placeholder="Subject"
+                            />
+                        </FormGroup>
+                        <FormGroup controlId="formBasicMessage">
+                            <Input
+                                type="textarea"
+                                name="message"
+                                className="text-primary"
+                                value={this.state.message}
+                                onChange={this.handleChange.bind(this, 'message')}
+                                placeholder="share your thoughts with me"
+                            />
+                        </FormGroup>
+                        <Button variant="primary" type="submit">SEND</Button>
+                    </Form>
                 </div>
             </div>
         )
     }
-
-
-};
-
+}
 export default Contact;
