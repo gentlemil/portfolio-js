@@ -2,6 +2,8 @@ import React from 'react';
 // import logo from './logo.svg';
 import './App.scss';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import ScrollToTop from 'react-scroll-up';
+
 import Toolbar from './components/Toolbar/Toolbar'
 import SideDrawer from './components/SideDrawer/SideDrawer'
 import Backdrop from './components/Backdrop/Backdrop'
@@ -53,7 +55,9 @@ class App extends React.PureComponent {
           </Switch>
         </Router>
         <Footer />
-
+        <ScrollToTop showUnder={160} style={{ backgroundColor: 'white' }}>
+          <div className='scroll-up'><i class="fas fa-caret-up"></i></div>
+        </ScrollToTop>
       </div>
     );
   }

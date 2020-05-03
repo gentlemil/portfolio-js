@@ -41,6 +41,12 @@
             margin: 2.5rem 0;
             justify-content: center;
 
+            .buttons-about {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
         }
     }
 }

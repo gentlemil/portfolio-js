@@ -64,7 +64,7 @@ const About = () => {
                             
                             </p>
                             <div className='buttons-about'>
-                                <Button name='OFFICIAL WEBSITE' />
+                                <Button name='OFFICIAL WEBSITE' path='https://www.youtube.com/watch?v=4pxA5-uqGmQ' />
                             </div>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
@@ -102,7 +102,7 @@ const About = () => {
                                 a team member. That year we won competition.
                             </p>
                             <div className='buttons-about'>
-                                <Button name='OFFICIAL WEBSITE' />
+                                <Button name='OFFICIAL WEBSITE' path='https://www.youtube.com/watch?v=IbyB8cIOnB4' />
                             </div>
 
                         </VerticalTimelineElement>
@@ -222,8 +222,8 @@ const About = () => {
                             five friends we decided to face the rest of the participants and go to Spain with our Żuk.
                             </p>
                             <div className='buttons-about'>
-                                <Button name='OFFICIAL WEBSITE' />
-                                <Button name='OUR VIDEO' />
+                                <Button name='OFFICIAL WEBSITE' path='https://zlombol.pl/'/>
+                                <Button name='OUR VIDEO' path='https://www.youtube.com/watch?v=lyB6t_PCmFU&t=83s' />
                             </div>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
@@ -243,7 +243,7 @@ const About = () => {
                             Together with my companion we reached the finish line in 3 days.
                             </p>
                             <div className='buttons-about'>
-                                <Button name='OFFICIAL WEBSITE' />
+                                <Button name='OFFICIAL WEBSITE' path='https://autostoprace.pl/' />
                             </div>
                         </VerticalTimelineElement>
                     </VerticalTimeline>

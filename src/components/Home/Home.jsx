@@ -26,7 +26,6 @@ const Home = () => {
                     style={{ color: 'white', fontSize: '2rem', }}
                     items={['FullStack JavaScript Developer', 'Traveler, Backpacker, Hitchhiker', 'Enginner of automation and robotics']} />
                 <div className='home__buttons'>
-                    <Button name='ABOUT' />
                     <Button name='MY CV' />
                 </div>
             </div>

@@ -1,4 +1,27 @@
 .App {
   text-align: center;
   background-color: rgb(4, 18, 48);
+  box-sizing: border-box;
+}
+
+.scroll-up {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(240, 165, 4);
+  background-color: rgb(4, 18, 48);
+  margin: 0;
+  padding: 0;
+
+  i {
+    color: rgb(240, 165, 4);
+    font-size: 1.4rem;
+  }
+}
+
+.scroll-up:hover i {
+  transform: translateY(-2px);
+  transition: 0.5s all ease-in-out;
 }
