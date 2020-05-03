@@ -41,10 +41,7 @@ class Projects extends React.PureComponent {
                         <div className='content'>
                             <h3>PLANTASTIC</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
-                                enim laudantium, animi veniam libero eveniet culpa unde perferendis
-                                illo fugit corporis, voluptatibus totam dolorum, maiores magnam
-                                officia. Ab, delectus.
+                                An application to monitor the ornamental flowers that we have on our apartment. Connected to API created with Django framework. Shows basic information about plants, their requirements, e.g. date of last watering. Application created in a 6-person team.
                             </p>
                             {/* <Button name='WEBSITE' path={''} /> */}
                             <Button name='CODE' path={'https://github.com/argasek/codebrainers-plantastic'} />
@@ -58,10 +55,7 @@ class Projects extends React.PureComponent {
                         <div className='content'>
                             <h3>TODO application</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
-                                enim laudantium, animi veniam libero eveniet culpa unde perferendis
-                                illo fugit corporis, voluptatibus totam dolorum, maiores magnam
-                                officia. Ab, delectus.
+                                My first application created using the React library. The tasks are saved in Local Storage. You can edit them as well as delete them. The application counts down the time to complete the task.
                             </p>
                             <div className='buttons'>
                                 {/* <Button name='WEBSITE' path={''}/>
@@ -76,10 +70,7 @@ class Projects extends React.PureComponent {
                         <div className='content'>
                             <h3>Drukarnia Club</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
-                                enim laudantium, animi veniam libero eveniet culpa unde perferendis
-                                illo fugit corporis, voluptatibus totam dolorum, maiores magnam
-                                officia. Ab, delectus.
+                                The website of the "Drukarnia" café club was created entirely with the help of Django. It contains basic information about the pub, a system for creating new users (employees) who can add/edit/delete bookings. The menu is also created in a dynamic way thanks to the connected API created by me. It also has a contact form. The site is still in testing stage.
                             </p>
                             <div className='buttons'>
                                 <Button name='WEBSITE' path={'https://drukarnia-club.herokuapp.com/'} />
@@ -94,10 +85,7 @@ class Projects extends React.PureComponent {
                         <div className='content'>
                             <h3>CV Template</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
-                                enim laudantium, animi veniam libero eveniet culpa unde perferendis
-                                illo fugit corporis, voluptatibus totam dolorum, maiores magnam
-                                officia. Ab, delectus.
+                                Due to the lack of interesting templates in the CV wizards I decided to create my own html template which you can see by clicking below.
                             </p>
                             <div className='buttons'>
                                 {/* <Button name='WEBSITE' path={''}/> */}
@@ -112,10 +100,7 @@ class Projects extends React.PureComponent {
                         <div className='content'>
                             <h3>Arlo html Template</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
-                                enim laudantium, animi veniam libero eveniet culpa unde perferendis
-                                illo fugit corporis, voluptatibus totam dolorum, maiores magnam
-                                officia. Ab, delectus.
+                                As part of the exercises, using pure HTML5, CSS3 styling and Javascript, I created a fully functional website 'Arlo template'.
                             </p>
                             <div className='buttons'>
                                 <Button name='WEBSITE' path={'https://gentlemil.github.io/webProject/'} />
@@ -130,10 +115,7 @@ class Projects extends React.PureComponent {
                         <div className='content'>
                             <h3>Omnifood Restaurant Template</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
-                                enim laudantium, animi veniam libero eveniet culpa unde perferendis
-                                illo fugit corporis, voluptatibus totam dolorum, maiores magnam
-                                officia. Ab, delectus.
+                                As part of the exercises, using pure HTML5, CSS3 styling and Javascript, I created a fully functional website 'omnifood'.
                             </p>
                             <div className='buttons'>
                                 {/* <Button name='WEBSITE' path={''}/>

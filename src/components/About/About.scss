@@ -79,11 +79,14 @@
     font-size: 1.5rem;
 }
 
-.vertical-timeline-element-content p {
-    font-size: 1rem;
+.vertical-timeline-element-date,
+.vertical-timeline-element-date p {
+    color: rgb(4, 18, 48);
+    font-size: 2rem;
     font-weight: 300;
+    // left: 80%;
+    opacity: 1;
 }
-
 
 @media (max-width: 769px) {
     .about {

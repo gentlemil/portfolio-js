@@ -106,7 +106,10 @@
                         }
                     }
 
-                    .content__right__buttons {}
+                    .resume__buttons {
+                        display: flex;
+                        justify-content: center;
+                    }
                 }
             }
 
@@ -166,6 +169,22 @@
                 }
             }
         }
+    }
+
+    .vertical-timeline-element-date {
+        color: rgb(4, 18, 48);
+        // font-size: 1rem;
+        // font-weight: 300;
+        display: flex;
+        left: 80%;
+        opacity: 1;
+
+        // }
+
+        // .vertical-timeline-element-date:nth-child(even) {
+        //     display: inline-block;
+        // }
+
     }
 }
 

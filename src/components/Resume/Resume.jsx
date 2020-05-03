@@ -57,21 +57,21 @@ class Resume extends React.PureComponent {
             educationData: [
                 {
                     name: 'Codebrainers Programming School',
-                    date: '10/2019 - till now',
+                    date: '10/2019 - present',
                     faculty: 'Full Stack Developer',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                    description: 'During several months of bootcamp I was improving my front-end and backend skills under the guidance of experienced mentors. I created simple but functional applications using javascript, python and creating a database structure. I used the acquired skills while creating projects, which you can review the most important in the projects tab (click below).'
                 },
                 {
                     name: '天津大学 - Tianjin University, China',
                     date: '09/2018 - 12/2018',
                     faculty: 'Control Science and Engineering',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                    description: 'As part of the Chinese Government Scholarschip program, I spent three months at the University of Tianjin, taking lessons from experienced Chinese teachers in Control Science and Engineering. I lived in a dorm, learned the Chinese language and spent my free time in an international company visiting the city and its surroundings and learning the secrets of Chinese cuisine.'
                 },
                 {
                     name: 'AGH University of Science and Technology',
                     date: '10/2012 - 02/2016',
                     faculty: 'Automatics and Robotics',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                    description: "I studied at the University of Science and Technology in Kraków, Faculty of Mechanical Engineering and Robotics, majoring in automation and robotics. It's been a rough three and a half years, but it paid off. I got the name of the engineer by defending the work on the power supply to the active hand denture."
                 },
 
 
@@ -108,7 +108,11 @@ class Resume extends React.PureComponent {
                         <div data-aos='fade-up' className='content__right'>
                             <div className='content__right__element'>
                                 <h5>My name is Milosz and I am web designer.</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                <p>I am an automation engineer by profession, a passionate
+                                traveler and programmer. I love challenges, unconventional
+                                solutions, and teamwork with people with passion. It. For me, it is not
+                                the most important goal I set myself, but the path I follow in achieving
+                                it.
                                 </p>
                                 <Table className='table'>
                                     <tbody>
@@ -120,10 +124,13 @@ class Resume extends React.PureComponent {
                                         )}
                                     </tbody>
                                 </Table>
-                                <div className='resume__buttons'>
-                                    <Button name='ABOUT ME' />
+                                {/* <div className='resume__buttons'>
+                                    <div className='btn' style={{ border: '2px solid hotpink', marginTop: '1rem', padding: '0' }}>
+                                        <Button name='ABOUT ME' />
+
+                                    </div>
                                     <Button name='MY PROJECTS' />
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -174,9 +181,7 @@ class Resume extends React.PureComponent {
                                 >
                                     <h3 className="vertical-timeline-element-title">{item.name}</h3>
                                     <h4 className="vertical-timeline-element-subtitle">{item.faculty}</h4>
-                                    <p className="vertical-timeline-element-description">
-                                        {item.description}
-                                    </p>
+                                    <p className="vertical-timeline-element-description">{item.description}</p>
                                 </VerticalTimelineElement>
                             )}
                         </VerticalTimeline>
