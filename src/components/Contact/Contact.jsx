@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import * as emailjs from 'emailjs-com';
 // import Button from '../Button/Button'
-import { Button, FormFeedback, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Button, Form, FormGroup, Input } from 'reactstrap';
 
 import './Contact.scss';
 

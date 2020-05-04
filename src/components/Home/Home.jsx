@@ -1,4 +1,5 @@
 import React from 'react';
+import Particles from 'react-particles-js';
 import Button from '../Button/Button'
 import Background from '../../images/background.JPG';
 import Main from '../../images/main.jpg';
@@ -18,6 +19,23 @@ const Home = () => {
     return (
         <div className='home' style={contentStyle}>
             <div className='content'>
+                {/* <Particles
+                    params={{
+                        particles: {
+                            line_linked: {
+                                shadow: {
+                                    enable: true,
+                                    color: "#3CA9D1",
+                                    blur: 5
+                                }
+                            }
+                        }
+                    }}
+                    style={{
+                        width: '100vw',
+                        backgroundImage: `url(${Background})`
+                    }}
+                /> */}
                 <div className='home__profile-photo'>
                     <img src={Main} alt='profile-photo' />
                 </div>
@@ -28,6 +46,7 @@ const Home = () => {
                 <div className='home__buttons'>
                     <Button name='MY CV' />
                 </div>
+
             </div>
         </div>
 

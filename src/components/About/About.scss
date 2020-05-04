@@ -1,11 +1,11 @@
 .about {
-    width: 100%;
+    width: 100vw;
     background-color: #041230;
     background-size: cover;
     background-attachment: fixed;
-    margin: 0;
+    margin: 0 auto;
     margin-top: 1.5rem;
-    padding: 1rem;
+    padding: 1rem 0;
 
     .frameBox {
         max-width: 1200px;
@@ -51,48 +51,6 @@
     }
 }
 
-
-.vertical-timeline::before {
-    background-color: rgb(4, 18, 48);
-}
-
-.vertical-timeline-element-icon {
-    border: 2px solid rgb(4, 18, 48);
-    box-shadow: none;
-    /* background-color: seashell; */
-    color: rgb(4, 18, 48);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.vertical-timeline-element-icon i {
-    color: seashell;
-    margin: 0 auto;
-}
-
-.vertical-timeline-element-title {
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
-.vertical-timeline-element-subtitle {
-    font-size: 1.3rem;
-    font-weight: 400;
-}
-
-.vertical-timeline-element-description {
-    font-size: 1.5rem;
-}
-
-.vertical-timeline-element-date,
-.vertical-timeline-element-date p {
-    color: rgb(4, 18, 48);
-    font-size: 2rem;
-    font-weight: 300;
-    // left: 80%;
-    opacity: 1;
-}
 
 @media (max-width: 769px) {
     .about {
