@@ -1,10 +1,9 @@
 import React from 'react';
-import Button from '../Button/Button';
 import { VerticalTimeline } from 'react-vertical-timeline-component';
-import Background from '../../images/background.JPG';
-import 'react-vertical-timeline-component/style.min.css';
-import './About.scss'
 import SingleCard from './SingleCard';
+import 'react-vertical-timeline-component/style.min.css';
+import './About.scss';
+
 
 class About extends React.PureComponent {
     constructor(props) {
@@ -109,9 +108,10 @@ class About extends React.PureComponent {
                     description: "",
                     icon: '',
                 },
-            ]
+            ],
         }
-    }
+    };
+
     render() {
         return (
             <div className='about' >
@@ -121,7 +121,6 @@ class About extends React.PureComponent {
                         <h4>shortly who the hell I am</h4>
                     </div>
                     <div className='frameBox__content'>
-
                         <VerticalTimeline>
                             {this.state.aboutData.map(item =>
                                 <SingleCard
@@ -133,7 +132,6 @@ class About extends React.PureComponent {
                                 />
                             )}
                         </VerticalTimeline>
-
                     </div>
                 </div>
             </div>

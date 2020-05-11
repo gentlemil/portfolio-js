@@ -1,6 +1,7 @@
 .footer {
   margin: 0 auto;
   padding: 1.5rem 0;
+  background: #041545;
 }
 
 .footer .container {
@@ -46,8 +47,16 @@
 }
 
 .footer .container .social-icons li a {
-  color: white;
+  color: seashell;
   text-decoration: none;
   font-size: 1.5rem;
+}
+
+.footer .container .social-icons li:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  color: #f0a504;
+  -webkit-transition: 1.5s all;
+  transition: 1.5s all;
 }
 /*# sourceMappingURL=Footer.css.map */

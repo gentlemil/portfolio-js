@@ -1,13 +1,12 @@
 import React from 'react';
-import { Table } from 'reactstrap'
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import { Grid, Image } from 'semantic-ui-react';
+import Main from '../../images/profile-photo.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { VerticalTimeline, VerticalTimelineElement, WorkIcon } from 'react-vertical-timeline-component';
+import '../../../node_modules/semantic-ui-css/semantic.css';
 import 'react-vertical-timeline-component/style.min.css';
-import Button from '../Button/Button'
-import Main from '../../images/profile-photo.jpg';
-import Background from '../../images/background.JPG';
-import './Resume.scss'
+import './Resume.scss';
 
 class Resume extends React.PureComponent {
     constructor(props) {
@@ -72,9 +71,7 @@ class Resume extends React.PureComponent {
                     date: '10/2012 - 02/2016',
                     faculty: 'Automatics and Robotics',
                     description: "I studied at the University of Science and Technology in Kraków, Faculty of Mechanical Engineering and Robotics, majoring in automation and robotics. It's been a rough three and a half years, but it paid off. I got the name of the engineer by defending the work on the power supply to the active hand denture."
-                },
-
-
+                }
             ],
         }
     };
@@ -91,7 +88,6 @@ class Resume extends React.PureComponent {
     }
 
     render() {
-        // let backgroundStyle = { backgroundColor: '#3661be' }
         return (
             <div className='resume'>
                 <div className='frameBox' >
@@ -100,39 +96,33 @@ class Resume extends React.PureComponent {
                         <h4>my short little cute introduction</h4>
                     </div>
                     <div className='frameBox__content'>
-                        <div className='content__left'>
-                            <div className='photo-resume'>
-                                <img src={Main} alt='profile-photo' />
-                            </div>
-                        </div>
-                        <div data-aos='fade-up' className='content__right'>
-                            <div className='content__right__element'>
-                                <h5>My name is Milosz and I am web designer.</h5>
-                                <p>I am an automation engineer by profession, a passionate
-                                traveler and programmer. I love challenges, unconventional
-                                solutions, and teamwork with people with passion. It. For me, it is not
-                                the most important goal I set myself, but the path I follow in achieving
-                                it.
-                                </p>
-                                <Table className='table'>
-                                    <tbody>
-                                        {this.state.personalData.map(item =>
-                                            <tr>
-                                                <th scope='row'><i class={item.icon}></i></th>
-                                                <td>{item.text}</td>
-                                            </tr>
-                                        )}
-                                    </tbody>
-                                </Table>
-                                {/* <div className='resume__buttons'>
-                                    <div className='btn' style={{ border: '2px solid hotpink', marginTop: '1rem', padding: '0' }}>
-                                        <Button name='ABOUT ME' />
-
-                                    </div>
-                                    <Button name='MY PROJECTS' />
-                                </div> */}
-                            </div>
-                        </div>
+                        <Grid>
+                            <Grid.Column mobile={16} tablet={8} computer={8}>
+                                <Image className='resume-image' src={Main} alt='profile-photo' />
+                            </Grid.Column>
+                            <Grid.Column mobile={16} tablet={8} computer={8}>
+                                <div className='content__right__element' data-aos='fade-up'>
+                                    <h5>My name is Milosz and I am web designer.</h5>
+                                    <p>
+                                        I am an automation engineer by profession, a passionate
+                                        traveler and programmer. I love challenges, unconventional
+                                        solutions, and teamwork with people with passion. It. For me, it is not
+                                        the most important goal I set myself, but the path I follow in achieving
+                                        it.
+                                    </p>
+                                    <table className='table'>
+                                        <tbody>
+                                            {this.state.personalData.map(item =>
+                                                <tr>
+                                                    <th scope='row'><i class={item.icon}></i></th>
+                                                    <td>{item.text}</td>
+                                                </tr>
+                                            )}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </Grid.Column>
+                        </Grid>
                     </div>
                 </div>
 
@@ -141,7 +131,6 @@ class Resume extends React.PureComponent {
                         <h1>SKILLS AND ABBILITIES</h1>
                         <h4>I can say I'm quite good at</h4>
                     </div>
-                    {/* --- */}
                     <div className='frameBox__content'>
 
                         {this.state.skillsData.map(item =>
@@ -149,7 +138,6 @@ class Resume extends React.PureComponent {
                                 <ul data-aos='fade-up' className='single-card'>
                                     <li><i class={item.icon}></i></li>
                                     <li><h4>{item.name}</h4></li>
-
                                     <li>
                                         <ul>
                                             <li><p><i class="fas fa-check" style={{ fontSize: '1.5rem' }}></i></p></li>
@@ -173,9 +161,11 @@ class Resume extends React.PureComponent {
                             {this.state.educationData.map(item =>
                                 <VerticalTimelineElement
                                     className="vertical-timeline-element"
-                                    contentStyle={{ background: 'rgb(4, 18, 48)', color: 'seashell' }}
-                                    contentArrowStyle={{ borderRight: '7px solid  rgb(4, 18, 48)' }}
-                                    iconStyle={{ background: 'rgb(4, 18, 48)', color: 'seashell', fontSize: '1.8rem', }}
+                                    contentStyle={{
+                                        background: 'linear-gradient(135deg, rgba(4, 21, 69, 1) 0%, rgba(9, 41, 136, 0.75) 79%, rgba(6, 34, 117, 1) 100%)', color: 'seashell'
+                                    }}
+                                    contentArrowStyle={{ borderRight: '7px solid  rgba(4, 21, 69, 1)' }}
+                                    iconStyle={{ background: 'rgba(4, 21, 69, 1)', color: 'seashell', fontSize: '1.8rem', }}
                                     date={item.date}
                                     icon={<i class="fas fa-briefcase"></i>}
                                 >
@@ -190,7 +180,6 @@ class Resume extends React.PureComponent {
             </div>
         );
     }
-
 };
 
 export default Resume;

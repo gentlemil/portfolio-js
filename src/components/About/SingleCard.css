@@ -1,0 +1,54 @@
+.vertical-timeline::before {
+  background: #041545;
+  background: linear-gradient(135deg, #041545 0%, rgba(9, 41, 136, 0.75) 79%, #062275 100%);
+}
+
+.vertical-timeline-element-icon {
+  border: 2px solid #041545;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  /* background-color: seashell; */
+  color: #041545;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vertical-timeline-element-icon i {
+  color: seashell;
+  margin: 0 auto;
+}
+
+.vertical-timeline-element-content {
+  text-align: justify !important;
+}
+
+.vertical-timeline-element-title {
+  font-size: 2rem !important;
+  font-weight: 500;
+}
+
+.vertical-timeline-element-subtitle {
+  font-size: 1.6rem !important;
+  font-weight: 400;
+}
+
+.vertical-timeline-element-description {
+  font-size: 1.3rem !important;
+  font-weight: 100 !important;
+}
+
+.vertical-timeline-element-date,
+.vertical-timeline-element-date p {
+  color: #041545;
+  font-size: 2rem;
+  font-weight: 300;
+  opacity: 1;
+}
+/*# sourceMappingURL=SingleCard.css.map */

@@ -1,6 +1,7 @@
 .side-drawer {
   height: 100%;
-  background: white;
+  background: #041545;
+  color: seashell;
   -webkit-box-shadow: 1px 0px 7px #000001;
           box-shadow: 1px 0px 7px #000001;
   position: fixed;

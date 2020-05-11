@@ -1,11 +1,14 @@
+$baseColor: rgb(4, 21, 69);
+$firstColor: rgba(4, 21, 69, 1);
+$secondColor: rgba(9, 41, 136, 0.75);
+$thirdColor: rgba(6, 34, 117, 1);
+$brightColor: seashell;
+
 .contact {
-    // max-width: 1300px;
-    // margin: auto;
-    // overflow: auto;
-    // padding: 0 2rem;
     width: 100%;
     height: 100vh;
-    background-color: #041230;
+    background: $baseColor;
+    background: linear-gradient(135deg, $firstColor 0%, $secondColor 79%, $thirdColor 100%);
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
@@ -16,17 +19,20 @@
     align-items: center;
 
     .frameBox {
-        // max-width: 1300px;
         width: 60%;
         height: 60%;
-        background-color: seashell;
+        background: url('../../images/1.png');
+        background-size: initial;
+        background-repeat: repeat;
         margin: 0 auto;
         padding: 1rem 1.5rem 3rem 1.5rem;
 
         .frameBox__title {
+            padding-top: 20px;
+            padding-bottom: 40px;
 
             h1 {
-                color: rgb(4, 18, 48);
+                color: $baseColor;
                 font-weight: 200;
                 font-size: 3.5rem;
                 padding: 0;
@@ -35,7 +41,7 @@
             }
 
             h4 {
-                color: rgb(4, 18, 48);
+                color: $baseColor;
                 font-weight: 100;
                 font-size: 1.5rem;
                 padding: 0;
@@ -48,7 +54,7 @@
             width: 80%;
             padding: 2rem 0;
             margin: 0 auto;
-            border: 2px solid rgb(4, 18, 48);
+            border: 2px solid $baseColor;
 
             .text-primary {
                 max-width: 400px;
@@ -58,4 +64,31 @@
             }
         }
     }
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: $baseColor !important;
+    opacity: 0.95;
+}
+
+.ui.button {
+    background-color: $baseColor !important;
+    color: $brightColor !important;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        margin: 0 auto;
+        padding: 100px 0;
+
+        .frameBox {
+            width: 100vw;
+            height: 100%;
+            margin: 0;
+            padding: 0 10px;
+        }
+    }
+
 }

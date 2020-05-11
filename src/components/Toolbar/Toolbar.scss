@@ -1,17 +1,23 @@
+$baseColor: rgb(4, 21, 69);
+$firstColor: rgba(4, 21, 69, 1);
+$secondColor: rgba(9, 41, 136, 0.75);
+$thirdColor: rgba(6, 34, 117, 1);
+$brightColor: seashell;
+
 .toolbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 56px;
-    background-color: #041230;
+    background: $baseColor;
     z-index: 1000000;
 
     .toolbar__navigation {
         display: flex;
         height: 100%;
         align-items: center;
-        padding: 0 1rem;
+        padding: 0.5rem 1rem;
 
         .toolbar__toggle-button {}
 
@@ -19,9 +25,9 @@
             margin-left: 1rem;
 
             a {
-                color: white;
+                color: $brightColor;
                 text-decoration: none;
-                font-size: 1.5rem;
+                font-size: 1.8rem;
             }
         }
 
@@ -34,14 +40,16 @@
                 list-style: none;
                 margin: 0;
                 padding: 0;
+                padding-right: 1rem;
                 display: flex;
 
                 li {
-                    padding: 0 0.5rem;
+                    padding: 0 0.8rem;
 
                     a {
-                        color: white;
+                        color: $brightColor;
                         text-decoration: none;
+                        font-size: 1.5rem;
                     }
 
                     a:hover {
@@ -49,7 +57,7 @@
                     }
 
                     a:active {
-                        color: white;
+                        color: $brightColor;
                     }
                 }
             }

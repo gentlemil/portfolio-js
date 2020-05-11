@@ -1,39 +1,51 @@
+$baseColor: rgb(4, 21, 69);
+$firstColor: rgba(4, 21, 69, 1);
+$secondColor: rgba(9, 41, 136, 0.75);
+$thirdColor: rgba(6, 34, 117, 1);
+$brightColor: seashell;
+
 .vertical-timeline::before {
-    background-color: rgb(4, 18, 48);
+    background: $baseColor;
+    background: linear-gradient(135deg, $firstColor 0%, $secondColor 79%, $thirdColor 100%);
 }
 
 .vertical-timeline-element-icon {
-    border: 2px solid rgb(4, 18, 48);
+    border: 2px solid $baseColor;
     box-shadow: none;
     /* background-color: seashell; */
-    color: rgb(4, 18, 48);
+    color: $baseColor;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .vertical-timeline-element-icon i {
-    color: seashell;
+    color: $brightColor;
     margin: 0 auto;
 }
 
+.vertical-timeline-element-content {
+    text-align: justify !important;
+}
+
 .vertical-timeline-element-title {
-    font-size: 1.5rem;
+    font-size: 2rem !important;
     font-weight: 500;
 }
 
 .vertical-timeline-element-subtitle {
-    font-size: 1.3rem;
+    font-size: 1.6rem !important;
     font-weight: 400;
 }
 
 .vertical-timeline-element-description {
-    font-size: 1.5rem;
+    font-size: 1.3rem !important;
+    font-weight: 100 !important;
 }
 
 .vertical-timeline-element-date,
 .vertical-timeline-element-date p {
-    color: rgb(4, 18, 48);
+    color: $baseColor;
     font-size: 2rem;
     font-weight: 300;
     // left: 80%;

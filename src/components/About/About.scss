@@ -1,22 +1,30 @@
+$baseColor: rgb(4, 21, 69);
+$firstColor: rgba(4, 21, 69, 1);
+$secondColor: rgba(9, 41, 136, 0.75);
+$thirdColor: rgba(6, 34, 117, 1);
+$brightColor: seashell;
+
+
 .about {
     width: 100vw;
-    background-color: #041230;
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0 auto;
+    background: $baseColor;
+    background: linear-gradient(135deg, $firstColor 0%, $secondColor 79%, $thirdColor 100%);    margin: 0 auto;
     margin-top: 1.5rem;
     padding: 1rem 0;
 
     .frameBox {
-        max-width: 1200px;
-        background-color: seashell;
+        max-width: 1300px;
+        background: url('../../images/1.png');
+        background-size: initial;
+        background-repeat: repeat;
         margin: 0 auto;
         padding: 1rem 6rem 3rem;
 
         .frameBox__title {
+            padding: 100px 0;
 
             h1 {
-                color: rgb(4, 18, 48);
+                color: $baseColor;
                 font-weight: 200;
                 font-size: 3.5rem;
                 padding: 0;
@@ -25,7 +33,7 @@
             }
 
             h4 {
-                color: rgb(4, 18, 48);
+                color: $baseColor;
                 font-weight: 100;
                 font-size: 1.5rem;
                 padding: 0;
@@ -35,7 +43,7 @@
         }
 
         .frameBox__content {
-            border: 2px solid rgb(4, 18, 48);
+            border: 2px solid $baseColor;
             display: flex;
             flex-direction: column;
             margin: 2.5rem 0;
@@ -46,11 +54,13 @@
                 justify-content: center;
                 flex-wrap: wrap;
             }
-
         }
     }
 }
 
+.vertical-timeline-element-subtitle {
+    margin-top: 0.8rem !important;
+}
 
 @media (max-width: 769px) {
     .about {
@@ -60,8 +70,6 @@
             .frameBox__content {
                 border: none;
             }
-
         }
     }
-
 }

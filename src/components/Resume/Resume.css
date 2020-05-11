@@ -1,6 +1,7 @@
 .resume {
   width: 100%;
-  background-color: #041230;
+  background: #041545;
+  background: linear-gradient(135deg, #041545 0%, rgba(9, 41, 136, 0.75) 79%, #062275 100%);
   background-size: cover;
   background-attachment: fixed;
   margin: 0;
@@ -10,33 +11,37 @@
 
 .resume .frameBox {
   max-width: 1300px;
-  background-color: seashell;
+  background: url("../../images/1.png");
+  background-size: initial;
+  background-repeat: repeat;
   margin: 0 auto;
   padding: 1rem 1.5rem 3rem;
 }
 
+.resume .frameBox .frameBox__title {
+  padding: 100px 0;
+}
+
 .resume .frameBox .frameBox__title h1 {
-  color: #041230;
+  color: #041545;
   font-weight: 200;
   font-size: 3.5rem;
   padding: 0;
   margin-bottom: 0;
-  padding-left: 2rem;
 }
 
 .resume .frameBox .frameBox__title h4 {
-  color: #041230;
+  color: #041545;
   font-weight: 100;
   font-size: 1.5rem;
   padding: 0;
-  padding-left: 2rem;
   margin-top: 0;
 }
 
 .resume .frameBox .frameBox__content {
   margin: 0 2rem;
   padding: 2rem;
-  border: 2px solid #041230;
+  border: 2px solid #041545;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,51 +54,34 @@
       justify-content: space-around;
 }
 
-.resume .frameBox .frameBox__content .content__left {
-  max-width: 500px;
-}
-
-.resume .frameBox .frameBox__content .content__left .photo-resume {
-  width: 350px;
-  margin: 0 auto;
-}
-
-.resume .frameBox .frameBox__content .content__left .photo-resume img {
+.resume .frameBox .frameBox__content .content__right__element {
   width: 100%;
-  height: 100%;
+  margin: auto;
 }
 
-.resume .frameBox .frameBox__content .content__right {
-  max-width: 550px;
-}
-
-.resume .frameBox .frameBox__content .content__right .content__right__element {
-  width: 100%;
-}
-
-.resume .frameBox .frameBox__content .content__right .content__right__element h5 {
-  color: #041230;
+.resume .frameBox .frameBox__content .content__right__element h5 {
+  color: #041545;
   font-size: 1.4rem;
   font-weight: 400;
 }
 
-.resume .frameBox .frameBox__content .content__right .content__right__element p {
+.resume .frameBox .frameBox__content .content__right__element p {
   width: 100%;
   font-size: 1.1rem;
   font-weight: 300;
-  color: #041230;
+  color: #041545;
   text-align: justify;
 }
 
-.resume .frameBox .frameBox__content .content__right .content__right__element .table {
+.resume .frameBox .frameBox__content .content__right__element .table {
   width: 100%;
 }
 
-.resume .frameBox .frameBox__content .content__right .content__right__element .table tbody {
+.resume .frameBox .frameBox__content .content__right__element .table tbody {
   width: 100%;
 }
 
-.resume .frameBox .frameBox__content .content__right .content__right__element .table tbody tr {
+.resume .frameBox .frameBox__content .content__right__element .table tbody tr {
   padding: 0.3rem 5rem;
   font-size: 0.9rem;
   display: -webkit-box;
@@ -104,16 +92,25 @@
           justify-content: space-between;
 }
 
-.resume .frameBox .frameBox__content .content__right .content__right__element .table tbody tr th {
+.resume .frameBox .frameBox__content .content__right__element .table tbody tr th {
   font-size: 1.5rem;
   font-weight: 500;
-  color: #041230;
+  color: #041545;
 }
 
-.resume .frameBox .frameBox__content .content__right .content__right__element .table tbody tr td {
+.resume .frameBox .frameBox__content .content__right__element .table tbody tr td {
   font-weight: 500;
-  color: #041230;
+  color: #041545;
   font-size: 1rem;
+}
+
+.resume .frameBox .frameBox__content .content__right__element .resume__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .resume .frameBox .frameBox__content .content__element {
@@ -145,7 +142,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #041230;
+  background-color: #041545;
   height: 100%;
 }
 
@@ -193,8 +190,42 @@
   color: seashell;
 }
 
+.resume-image {
+  max-width: 400px !important;
+  margin: 0 auto !important;
+}
+
+.vertical-timeline-element-date {
+  color: #041545;
+  font-size: 1rem !important;
+  font-weight: 300 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 80%;
+  opacity: 1;
+}
+
 .vertical-timeline::before {
   color: seashell;
   width: 2px;
+}
+
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline-element-date {
+    font-size: 1.2rem !important;
+    opacity: 1 !important;
+  }
+}
+
+@media (max-width: 968px) {
+  .resume-image {
+    max-width: 300px !important;
+  }
+  .frameBox__content {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    border: none !important;
+  }
 }
 /*# sourceMappingURL=Resume.css.map */

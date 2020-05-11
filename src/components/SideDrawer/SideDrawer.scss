@@ -1,6 +1,13 @@
+$baseColor: rgb(4, 21, 69);
+$firstColor: rgba(4, 21, 69, 1);
+$secondColor: rgba(9, 41, 136, 0.75);
+$thirdColor: rgba(6, 34, 117, 1);
+$brightColor: seashell;
+
 .side-drawer {
     height: 100%;
-    background: white;
+    background: $baseColor;
+    color: $brightColor;
     box-shadow: 1px 0px 7px rgb(0, 0, 0.5);
     position: fixed;
     top: 0;

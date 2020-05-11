@@ -1,0 +1,56 @@
+.grid__row {
+  margin: 15px 10px !important;
+  padding: 10px 20px !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  min-height: 40vh;
+  background: #041545;
+  background: linear-gradient(135deg, #041545 0%, rgba(9, 41, 136, 0.75) 79%, #062275 100%);
+}
+
+.project-name {
+  font-size: 2rem;
+  font-weight: 400;
+  color: seashell;
+  letter-spacing: 1.2px;
+}
+
+.project-shortcut {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: seashell;
+  letter-spacing: 0.6px;
+}
+
+.project-image,
+.text-column {
+  margin: auto !important;
+  padding: 0 !important;
+}
+
+.image-size-landscape,
+.image-size {
+  margin: 10px auto !important;
+  max-height: 300px !important;
+}
+
+.image-size {
+  border-radius: 12px !important;
+}
+
+.ui.celled.grid > .column:not(.row),
+.ui.celled.grid > .row > .column {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .grid__row {
+    margin: 15px 0 !important;
+  }
+  .ui.celled.grid {
+    margin: 0 !important;
+    width: 100vw !important;
+  }
+}
+/*# sourceMappingURL=Project.css.map */

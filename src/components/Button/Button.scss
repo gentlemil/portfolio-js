@@ -1,0 +1,32 @@
+$baseColor: rgb(4, 21, 69);
+$firstColor: rgba(4, 21, 69, 1);
+$secondColor: rgba(9, 41, 136, 0.75);
+$thirdColor: rgba(6, 34, 117, 1);
+$brightColor: seashell;
+
+.button-frame {
+    padding: 1rem 1rem;
+    margin: 0.6rem 0.7rem;
+    margin-top: 1rem;
+    background: transparent;
+    background-size: cover;
+    background-position: center center;
+    border: 2px solid $baseColor;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button-frame__text {
+    text-decoration: none;
+    color: $brightColor;
+    font-size: 1.4rem;
+    padding: 1.5rem 1rem;
+    margin: 0;
+}
+
+.button-frame:hover,
+.button-frame:active {
+    background-color: $secondColor;
+}

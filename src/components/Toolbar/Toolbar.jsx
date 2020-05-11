@@ -1,12 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
-// import Home from '../Home/Home';
-// import About from '../Linkbout/Linkbout';
-// import Resume from '../Resume/Resume';
-// import MyProjects from '../MyProjects/MyProjects';
-// import MyContact from '../MyContact/MyContact';
-
 import './Toolbar.scss'
 
 const Toolbar = (props) => {

@@ -1,3 +1,9 @@
+$baseColor: rgb(4, 21, 69);
+$firstColor: rgba(4, 21, 69, 1);
+$secondColor: rgba(9, 41, 136, 0.75);
+$thirdColor: rgba(6, 34, 117, 1);
+$brightColor: seashell;
+
 .toggle-button {
     display: flex;
     flex-direction: column;
@@ -18,5 +24,5 @@
 .toggle-button__line {
     width: 30px;
     height: 2px;
-    background: white;
+    background: $brightColor;
 }

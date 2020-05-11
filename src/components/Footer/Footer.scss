@@ -1,6 +1,13 @@
+$baseColor: rgb(4, 21, 69);
+$firstColor: rgba(4, 21, 69, 1);
+$secondColor: rgba(9, 41, 136, 0.75);
+$thirdColor: rgba(6, 34, 117, 1);
+$brightColor: seashell;
+
 .footer {
     margin: 0 auto;
     padding: 1.5rem 0;
+    background: $baseColor;
 
 
     .container {
@@ -11,7 +18,7 @@
 
         .copyright-text {
             margin: 0;
-            color: seashell;
+            color: $brightColor;
             font-weight: 200;
             font-size: 1.2rem;
 
@@ -32,7 +39,7 @@
                 padding: 0 1rem;
 
                 a {
-                    color: white;
+                    color: $brightColor;
                     text-decoration: none;
                     font-size: 1.5rem;
 

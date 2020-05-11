@@ -1,29 +1,27 @@
 .button-frame {
-    padding: 0.6rem 1rem;
-    margin: 0.6rem 0.7rem;
-    margin-top: 1rem;
-    background: transparent;
-    background-size: cover;
-    background-position: center center;
-    border: 1px solid seashell;
+  padding: 1rem 1rem;
+  margin: 0.6rem 0.7rem;
+  margin-top: 1rem;
+  background: transparent;
+  background-size: cover;
+  background-position: center center;
+  border: 2px solid #041545;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .button-frame__text {
-    text-decoration: none;
-    color: seashell;
-    font-size: 1.2rem;
-    margin: 0;
+  text-decoration: none;
+  color: seashell;
+  font-size: 1.4rem;
+  padding: 1.5rem 1rem;
+  margin: 0;
 }
 
 .button-frame:hover,
 .button-frame:active {
-    background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(9, 41, 136, 0.75);
 }
-
-/* .vertical-timeline-element-content p {
-    margin-top: 0;
-} */
+/*# sourceMappingURL=Button.css.map */

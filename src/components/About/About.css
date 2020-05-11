@@ -1,22 +1,27 @@
 .about {
-  width: 100%;
-  background-color: #041230;
-  background-size: cover;
-  background-attachment: fixed;
-  margin: 0;
+  width: 100vw;
+  background: #041545;
+  background: linear-gradient(135deg, #041545 0%, rgba(9, 41, 136, 0.75) 79%, #062275 100%);
+  margin: 0 auto;
   margin-top: 1.5rem;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .about .frameBox {
-  max-width: 1200px;
-  background-color: seashell;
+  max-width: 1300px;
+  background: url("../../images/1.png");
+  background-size: initial;
+  background-repeat: repeat;
   margin: 0 auto;
   padding: 1rem 6rem 3rem;
 }
 
+.about .frameBox .frameBox__title {
+  padding: 100px 0;
+}
+
 .about .frameBox .frameBox__title h1 {
-  color: #041230;
+  color: #041545;
   font-weight: 200;
   font-size: 3.5rem;
   padding: 0;
@@ -25,7 +30,7 @@
 }
 
 .about .frameBox .frameBox__title h4 {
-  color: #041230;
+  color: #041545;
   font-weight: 100;
   font-size: 1.5rem;
   padding: 0;
@@ -34,7 +39,7 @@
 }
 
 .about .frameBox .frameBox__content {
-  border: 2px solid #041230;
+  border: 2px solid #041545;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,49 +53,19 @@
           justify-content: center;
 }
 
-.vertical-timeline::before {
-  background-color: #041230;
-}
-
-.vertical-timeline-element-icon {
-  border: 2px solid #041230;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  /* background-color: seashell; */
-  color: #041230;
+.about .frameBox .frameBox__content .buttons-about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.vertical-timeline-element-icon i {
-  color: seashell;
-  margin: 0 auto;
-}
-
-.vertical-timeline-element-title {
-  font-size: 1.5rem;
-  font-weight: 500;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .vertical-timeline-element-subtitle {
-  font-size: 1.3rem;
-  font-weight: 400;
-}
-
-.vertical-timeline-element-description {
-  font-size: 1.5rem;
-}
-
-.vertical-timeline-element-content p {
-  font-size: 1rem;
-  font-weight: 300;
+  margin-top: 0.8rem !important;
 }
 
 @media (max-width: 769px) {

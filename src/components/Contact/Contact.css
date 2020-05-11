@@ -1,8 +1,90 @@
 .contact {
-  padding: 100px;
+  width: 100%;
+  height: 100vh;
+  background: #041545;
+  background: linear-gradient(135deg, #041545 0%, rgba(9, 41, 136, 0.75) 79%, #062275 100%);
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  margin-top: 1.5rem;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
+.contact .frameBox {
+  width: 60%;
+  height: 60%;
+  background: url("../../images/1.png");
+  background-size: initial;
+  background-repeat: repeat;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 3rem 1.5rem;
+}
+
+.contact .frameBox .frameBox__title {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.contact .frameBox .frameBox__title h1 {
+  color: #041545;
+  font-weight: 200;
+  font-size: 3.5rem;
+  padding: 0;
+  margin-bottom: 0;
+  padding-left: 2rem;
+}
+
+.contact .frameBox .frameBox__title h4 {
+  color: #041545;
+  font-weight: 100;
+  font-size: 1.5rem;
+  padding: 0;
+  padding-left: 2rem;
+  margin-top: 0;
+}
+
+.contact .frameBox .form-content {
+  width: 80%;
+  padding: 2rem 0;
+  margin: 0 auto;
+  border: 2px solid #041545;
+}
+
+.contact .frameBox .form-content .text-primary {
+  max-width: 400px;
+  width: 100%;
+  padding: 0.2rem;
+  margin: 0.5rem 0;
+}
+
+input[type="text"],
+input[type="email"],
 textarea {
-  color: hotpink;
+  background-color: #041545 !important;
+  opacity: 0.95;
+}
+
+.ui.button {
+  background-color: #041545 !important;
+  color: seashell !important;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    margin: 0 auto;
+    padding: 100px 0;
+  }
+  .contact .frameBox {
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    padding: 0 10px;
+  }
 }
 /*# sourceMappingURL=Contact.css.map */

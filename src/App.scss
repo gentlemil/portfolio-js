@@ -1,6 +1,13 @@
+$baseColor: rgb(4, 21, 69);
+$firstColor: rgba(4, 21, 69, 1);
+$secondColor: rgba(9, 41, 136, 0.75);
+$thirdColor: rgba(6, 34, 117, 1);
+$brightColor: seashell;
+
 .App {
   text-align: center;
-  background-color: rgb(4, 18, 48);
+  background: $baseColor;
+  background: linear-gradient(135deg, $firstColor 0%, $secondColor 79%, $thirdColor 100%);
   box-sizing: border-box;
 }
 
@@ -11,7 +18,7 @@
   justify-content: center;
   align-items: center;
   border: 2px solid rgb(240, 165, 4);
-  background-color: rgb(4, 18, 48);
+  background-color: $baseColor;
   margin: 0;
   padding: 0;
 

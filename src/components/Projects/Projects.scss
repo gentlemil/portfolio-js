@@ -1,8 +1,4 @@
 .projects {
-    // max-width: 1300px;
-    // margin: auto;
-    // overflow: auto;
-    // padding: 0 2rem;
     width: 100%;
     background-color: #041230;
     background-size: cover;
@@ -13,11 +9,14 @@
 
     .frameBox {
         max-width: 1300px;
-        background-color: seashell;
+        background: url('../../images/1.png');
+        background-size: initial;
+        background-repeat: repeat;
         margin: 0 auto;
-        padding: 1rem 1.5rem 3rem;
+        padding: 1rem 1.5rem 3rem 1.5rem;
 
         .frameBox__title {
+            padding: 100px 0;
 
             h1 {
                 color: rgb(4, 18, 48);
@@ -25,7 +24,6 @@
                 font-size: 3.5rem;
                 padding: 0;
                 margin-bottom: 0;
-                padding-left: 2rem;
             }
 
             h4 {
@@ -33,70 +31,14 @@
                 font-weight: 100;
                 font-size: 1.5rem;
                 padding: 0;
-                padding-left: 2rem;
                 margin-top: 0;
             }
         }
-
-        .card {
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 2rem;
-            background: rgb(4, 18, 48);
-            margin-bottom: 2rem;
-
-            .image {
-                height: 100%;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                img {
-                    width: 80%;
-                    height: 80%;
-                    border: 4px solid seashell;
-                }
-            }
-
-
-            .content {
-                padding: 2rem;
-                color: seashell;
-                display: flex;
-                flex-direction: column;
-                // justify-content: center;
-                align-items: center;
-
-                h3 {
-                    margin-bottom: 2rem;
-
-                    font-size: 2rem;
-                    font-weight: 400;
-                }
-
-                p {
-                    font-size: 1.2rem;
-                    font-weight: 300;
-                }
-
-                .buttons {
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                }
-            }
-        }
-
-        .card:nth-child(even) img {
-            order: 2;
-        }
     }
 }
 
-@media(max-width:600px) {
-    .card {
-        display: block;
-    }
+.grid__row:nth-child(2) .button-frame:first-of-type {
+    display: none;
 }
+
+@media(max-width: 768px) {}

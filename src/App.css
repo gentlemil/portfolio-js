@@ -1,5 +1,38 @@
 .App {
   text-align: center;
-  background-color: #041230;
+  background: #041545;
+  background: linear-gradient(135deg, #041545 0%, rgba(9, 41, 136, 0.75) 79%, #062275 100%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.scroll-up {
+  height: 35px;
+  width: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #f0a504;
+  background-color: #041545;
+  margin: 0;
+  padding: 0;
+}
+
+.scroll-up i {
+  color: #f0a504;
+  font-size: 1.4rem;
+}
+
+.scroll-up:hover i {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 /*# sourceMappingURL=App.css.map */
