@@ -14,18 +14,17 @@ $brightColor: seashell;
     margin: 0;
     margin-top: 1.5rem;
     padding: 0;
-
     display: flex;
     align-items: center;
 
     .frameBox {
         width: 60%;
-        height: 60%;
+        height: 80%;
         background: url('../../images/1.png');
         background-size: initial;
         background-repeat: repeat;
         margin: 0 auto;
-        padding: 1rem 1.5rem 3rem 1.5rem;
+        padding: 1rem 1.5rem 1rem 1.5rem;
 
         .frameBox__title {
             padding-top: 20px;
@@ -51,7 +50,7 @@ $brightColor: seashell;
         }
 
         .form-content {
-            width: 80%;
+            width: 100%;
             padding: 2rem 0;
             margin: 0 auto;
             border: 2px solid $baseColor;
