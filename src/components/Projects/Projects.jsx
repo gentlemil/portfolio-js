@@ -13,11 +13,11 @@ class Projects extends React.PureComponent {
             projectData: [
                 {
                     name: 'Portfolio',
-                    description: "As part of the exercises, using pure HTML5, CSS3 styling and Javascript, I created a fully functional website 'Arlo template'.",
+                    description: "As part of the exercises, using pure HTML5, CSS3 styling and Javascript, I created a fully functional responsive website 'Arlo template'. It is stored on Github servers.",
                     image: 'https://i.imgur.com/NlXoG0U.png',
                     imageMobile: 'https://i.imgur.com/HCXlKW6.png',
-                    buttonPath: 'https://gentlemil.github.io/portfolio-template/',
-                    buttonCodePath: 'https://github.com/gentlemil/portfolio-template',
+                    buttonPath: 'https://miloszbukala.pl',
+                    buttonCodePath: 'https://github.com/gentlemil/portfolio',
                 },
                 {
                     name: 'TODO App',
@@ -27,8 +27,16 @@ class Projects extends React.PureComponent {
                     buttonCodePath: 'https://github.com/gentlemil/my-todo-app/',
                 },
                 {
+                    name: 'my Portfolio',
+                    description: "A fully responsive website built using the React JavaScript library. It is stored on AWS servers (Amazon Web Services), while the file structure is stored on the Github hosting software service. Click below to see more.",
+                    image: 'https://i.imgur.com/uLMA9ee.png',
+                    imageMobile: 'https://i.imgur.com/9B2ayAc.png',
+                    buttonPath: 'https://gentlemil.github.io/portfolio-template/',
+                    buttonCodePath: 'https://github.com/gentlemil/portfolio-template',
+                },
+                {
                     name: 'Drukarnia Club',
-                    description: 'The website of the "Drukarnia" café club was created entirely with the help of Django. It contains basic information about the pub, a system for creating new users (employees) who can add/edit/delete bookings. The menu is also created in a dynamic way thanks to the connected API created by me. It also has a contact form. The site is still in testing stage.',
+                    description: 'The website of the "Drukarnia" café club was created entirely in Django Framework. It contains basic information about the pub, backend responsible for creating new users (employees) who can change bookings. The menu is also created in a dynamic way. All informations are stored in a database. It also has a contact form. Website was deployed on Heroku servers.',
                     image: 'https://i.imgur.com/xaNM0BR.png',
                     imageMobile: 'https://i.imgur.com/aDPYPn7.png',
                     buttonPath: 'https://drukarnia-club.herokuapp.com/',
@@ -36,7 +44,7 @@ class Projects extends React.PureComponent {
                 },
                 {
                     name: 'Omnifood Restaurant Template',
-                    description: "As part of the exercises, using pure HTML5, CSS3 styling and Javascript, I created a fully functional website 'omnifood'.",
+                    description: "As part of the exercises, using pure HTML5, CSS3 styling and Javascript, I created almost fully functional website 'omnifood'.",
                     image: 'https://i.imgur.com/y7oyPrN.png',
                     imageMobile: 'https://i.imgur.com/FLKHJD5.png',
                     buttonPath: 'ttps://gentlemil.github.io/foody-page',
