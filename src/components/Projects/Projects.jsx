@@ -21,7 +21,7 @@ class Projects extends React.PureComponent {
                 },
                 {
                     name: 'TODO App',
-                    description: 'My first application created using the React library. The tasks are saved in Local Storage. You can edit them as well as delete them. The application counts down the time to complete the task.',
+                    description: 'My first application created using the React library. The tasks are saved in Local Storage. You can edit them as well as delete them. The application counts down the time to complete the task. In progress.',
                     image: 'https://i.imgur.com/EJ8IcbK.jpg',
                     imageMobile: 'https://i.imgur.com/2Rvp22T.jpg',
                     buttonCodePath: 'https://github.com/gentlemil/my-todo-app/',
@@ -29,8 +29,8 @@ class Projects extends React.PureComponent {
                 {
                     name: 'Drukarnia Club',
                     description: 'The website of the "Drukarnia" café club was created entirely with the help of Django. It contains basic information about the pub, a system for creating new users (employees) who can add/edit/delete bookings. The menu is also created in a dynamic way thanks to the connected API created by me. It also has a contact form. The site is still in testing stage.',
-                    image: 'https://i.imgur.com/wGlsj1m.png',
-                    imageMobile: 'https://i.imgur.com/vaUS6di.jpg',
+                    image: 'https://i.imgur.com/xaNM0BR.png',
+                    imageMobile: 'https://i.imgur.com/aDPYPn7.png',
                     buttonPath: 'https://drukarnia-club.herokuapp.com/',
                     buttonCodePath: 'https://github.com/gentlemil/drukarnia-club',
                 },
@@ -38,7 +38,7 @@ class Projects extends React.PureComponent {
                     name: 'Omnifood Restaurant Template',
                     description: "As part of the exercises, using pure HTML5, CSS3 styling and Javascript, I created a fully functional website 'omnifood'.",
                     image: 'https://i.imgur.com/y7oyPrN.png',
-                    imageMobile: 'https://i.imgur.com/vaUS6di.jpg',
+                    imageMobile: 'https://i.imgur.com/FLKHJD5.png',
                     buttonPath: 'ttps://gentlemil.github.io/foody-page',
                     buttonCodePath: 'https://github.com/gentlemil/foody-page',
                 },

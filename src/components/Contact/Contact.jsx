@@ -91,6 +91,7 @@ class Contact extends Component {
                             name="message"
                             value={this.state.message}
                             placeholder='share your ideas with me'
+                            rows='8'
                             onChange={this.handleChange.bind(this, 'message')}
                         />
                         <Form.Button style={{ marginTop: '20px' }} >SEND</Form.Button>
