@@ -18,12 +18,12 @@
 
 .contact .frameBox {
   width: 60%;
-  height: 60%;
-  background: url("../../images/1.png");
+  height: 80%;
+  background: url("https://i.imgur.com/sOvFKBg.png");
   background-size: initial;
   background-repeat: repeat;
   margin: 0 auto;
-  padding: 1rem 1.5rem 3rem 1.5rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
 }
 
 .contact .frameBox .frameBox__title {
@@ -50,7 +50,7 @@
 }
 
 .contact .frameBox .form-content {
-  width: 80%;
+  width: 100%;
   padding: 2rem 0;
   margin: 0 auto;
   border: 2px solid #041545;

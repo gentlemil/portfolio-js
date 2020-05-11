@@ -101,13 +101,6 @@ class About extends React.PureComponent {
                     description: "Autostop Race is a student competition in which a thousand of people race on a specific route that they can hitchhike through. During such an expedition a person learns to overcome their fears as well as exercises patience and humility. Openness to new people and new situations is obligatory. Together with my companion we reached the finish line in 3 days.",
                     icon: 'fas fa-globe-europe',
                 },
-                {
-                    name: "",
-                    position: "",
-                    date: "",
-                    description: "",
-                    icon: '',
-                },
             ],
         }
     };

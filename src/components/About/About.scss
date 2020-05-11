@@ -8,13 +8,14 @@ $brightColor: seashell;
 .about {
     width: 100vw;
     background: $baseColor;
-    background: linear-gradient(135deg, $firstColor 0%, $secondColor 79%, $thirdColor 100%);    margin: 0 auto;
+    background: linear-gradient(135deg, $firstColor 0%, $secondColor 79%, $thirdColor 100%);
+    margin: 0 auto;
     margin-top: 1.5rem;
     padding: 1rem 0;
 
     .frameBox {
         max-width: 1300px;
-        background: url('../../images/1.png');
+        background: url('https://i.imgur.com/sOvFKBg.png');
         background-size: initial;
         background-repeat: repeat;
         margin: 0 auto;

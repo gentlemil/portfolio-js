@@ -1,7 +1,6 @@
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { Grid, Image } from 'semantic-ui-react';
-import Main from '../../images/profile-photo.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../../../node_modules/semantic-ui-css/semantic.css';
@@ -98,7 +97,7 @@ class Resume extends React.PureComponent {
                     <div className='frameBox__content'>
                         <Grid>
                             <Grid.Column mobile={16} tablet={8} computer={8}>
-                                <Image className='resume-image' src={Main} alt='profile-photo' />
+                                <Image className='resume-image' src={'https://i.imgur.com/r248yby.jpg'} alt='profile-photo' />
                             </Grid.Column>
                             <Grid.Column mobile={16} tablet={8} computer={8}>
                                 <div className='content__right__element' data-aos='fade-up'>
