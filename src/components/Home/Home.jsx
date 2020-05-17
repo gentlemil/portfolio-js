@@ -23,7 +23,7 @@ const Home = () => {
                     style={{ color: 'white', fontSize: '2rem', }}
                     items={['FullStack JavaScript Developer', 'Traveler, Backpacker, Hitchhiker', 'Enginner of automation and robotics']} />
                 <div className='home__buttons'>
-                    <Button name='MY CV' path='https://www.scribd.com/document/460895315/CV-Milosz-Bukala-Pl-and-Eng' />
+                    <Button name='MY CV' path='https://www.scribd.com/document/461875515/Cv-Milosz-Bukala-Pl-and-Eng' />
                 </div>
             </div>
         </div>
